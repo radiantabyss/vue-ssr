@@ -1,0 +1,34 @@
+{
+    "name": "radiantabyss/lumi-vue-ssr",
+    "description": "Lumi Vue SSR",
+    "keywords": [
+        "lumi vue artisan",
+		"vue artisan"
+    ],
+    "homepage": "https://radiantabyss.com",
+    "license": "proprietary",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Robert B.",
+            "email": "robert@radiantabyss.com",
+            "role": "developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "LumiVueSSR\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LumiVueSSR\\Tests\\": "tests"
+        }
+    }
+}
