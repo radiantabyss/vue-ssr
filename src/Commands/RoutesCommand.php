@@ -1,5 +1,5 @@
 <?php
-namespace LumiVueArtisan\Commands;
+namespace LumiVueSSR\Commands;
 
 class RoutesCommand implements CommandInterface
 {

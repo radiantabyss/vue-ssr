@@ -2,8 +2,8 @@
     "name": "radiantabyss/lumi-vue-ssr",
     "description": "Lumi Vue SSR",
     "keywords": [
-        "lumi vue artisan",
-		"vue artisan"
+        "lumi vue ssr",
+		"vue ssr"
     ],
     "homepage": "https://radiantabyss.com",
     "license": "proprietary",
