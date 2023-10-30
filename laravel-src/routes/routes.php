@@ -1,10 +1,10 @@
 <?php
-use RA\Core\Route;
-use RA\Core\RouteCrud;
+use Lumi\Core\Route;
+use Lumi\Core\RouteCrud;
 
 Route::get('{any?}', 'Index\IndexAction')->where('any', '.*');
 
-Route::group(['middleware' => ['RA\Auth\SetUser']], function() {
+Route::group(['middleware' => ['Lumi\Auth\SetUser']], function() {
     Route::post('/auth/user/reset-password', 'Auth\User\ResetPasswordAction');
     Route::post('/auth/user/accept-invite/{code}', 'Auth\User\AcceptInviteAction');
     Route::post('/auth/user/check-invite/{code}', 'Auth\User\CheckInviteAction');

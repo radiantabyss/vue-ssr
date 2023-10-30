@@ -10,9 +10,9 @@
     "type": "library",
     "authors": [
         {
-            "name": "Robert B.",
+            "name": "Robert",
             "email": "robert@radiantabyss.com",
-            "role": "developer"
+            "role": "owner"
         }
     ],
     "require": {

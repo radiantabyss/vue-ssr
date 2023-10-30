@@ -25,7 +25,7 @@ class RoutesCommand implements CommandInterface
                 throw new \Exception('Error in routes file: '.$file);
             }
 
-            $string = "<?php \nuse RA\Core\Route;\nuse RA\Core\RouteCrud;\n";
+            $string = "<?php \nuse Lumi\Core\Route;\nuse Lumi\Core\RouteCrud;\n";
             foreach ( $groups as $group ) {
                 //check if group contains private middleware
                 if ( count(array_diff($group['middleware'], $public_middleware)) ) {
