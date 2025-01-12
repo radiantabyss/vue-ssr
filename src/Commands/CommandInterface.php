@@ -1,5 +1,5 @@
 <?php
-namespace LumiVueSSR\Commands;
+namespace RA\VueSSR\Commands;
 
 interface CommandInterface
 {

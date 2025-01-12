@@ -1,8 +1,7 @@
 {
-    "name": "radiantabyss/lumi-vue-ssr",
-    "description": "Lumi Vue SSR",
+    "name": "radiantabyss/vue-ssr",
+    "description": "Vue SSR",
     "keywords": [
-        "lumi vue ssr",
 		"vue ssr"
     ],
     "homepage": "https://radiantabyss.com",
@@ -20,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "LumiVueSSR\\": "src"
+            "RA\\VueSSR\\": "src"
         },
         "files": [
             "src/helpers.php"
@@ -28,7 +27,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "LumiVueSSR\\Tests\\": "tests"
+            "RA\\VueSSR\\Tests\\": "tests"
         }
     }
 }

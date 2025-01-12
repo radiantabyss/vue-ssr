@@ -1,10 +1,10 @@
 <?php
-namespace LumiVueSSR\Commands;
+namespace RA\VueSSR\Commands;
 
 class RoutesCommand implements CommandInterface
 {
     public static function run($options) {
-        $public_middleware = explode(',', $_ENV['LUMI_PUBLIC_MIDDLEWARE'] ?? '');
+        $public_middleware = explode(',', $_ENV['PUBLIC_MIDDLEWARE'] ?? '');
         $files = scandir('src/Routes');
 
         foreach ( $files as $file ) {
@@ -25,7 +25,7 @@ class RoutesCommand implements CommandInterface
                 throw new \Exception('Error in routes file: '.$file);
             }
 
-            $string = "<?php \nuse Lumi\Core\Route;\nuse Lumi\Core\RouteCrud;\n";
+            $string = "<?php \nuse RA\Route;\nuse RA\RouteCrud;\n";
             foreach ( $groups as $group ) {
                 //check if group contains private middleware
                 if ( count(array_diff($group['middleware'], $public_middleware)) ) {

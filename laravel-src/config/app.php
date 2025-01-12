@@ -123,12 +123,12 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
         //custom facades
-        'Date' => Lumi\Core\Support\Facades\DateFacade::class,
-        'Domain' => Lumi\Core\Support\Facades\DomainFacade::class,
-        'Items' => Lumi\Core\Support\Facades\ItemsFacade::class,
-        'Media' => Lumi\Core\Support\Facades\MediaFacade::class,
-        'Seo' => Lumi\Core\Support\Facades\SeoFacade::class,
-        'Table' => Lumi\Core\Support\Facades\TableFacade::class,
+        'Date' => RA\Support\Facades\DateFacade::class,
+        'Domain' => RA\Support\Facades\DomainFacade::class,
+        'Items' => RA\Support\Facades\ItemsFacade::class,
+        'Media' => RA\Support\Facades\MediaFacade::class,
+        'Seo' => RA\Support\Facades\SeoFacade::class,
+        'Table' => RA\Support\Facades\TableFacade::class,
     ],
 
 ];
